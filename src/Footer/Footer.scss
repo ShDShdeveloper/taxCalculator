@@ -1,0 +1,165 @@
+footer{
+  background-color: #F6F6F7;
+  padding: 25px;
+  .upFooter{
+    display: flex;
+    align-items: center;
+    div{
+      display: flex;
+      align-items: center;
+      width: 32%;
+      justify-content: start;
+      margin: 0 auto;
+      p{
+        margin-top: -15px;
+        margin-left: 5px;
+        p{
+          margin: 0;
+        }
+
+        span{
+          font-size: 12px;
+          color: #777B82;
+        }
+      }
+      .icon{
+        position: relative;
+        .helpIcon{
+          position: absolute;
+          top: 8px;
+          left: 28.5px;
+        }
+      }
+    }
+  }
+  .middleFooter{
+    display: flex;
+    .menu{
+      width: 45%;
+      display: flex;
+      align-items: center;
+      div{
+        width: 49%;
+        margin-right: 10px;
+        p{
+          color: black;
+          font-size: 14px;
+        }
+      }
+    }
+    .searchPart{
+      width: 55%;
+      .searchPlace{
+        width: 80%;
+        margin: 15px 15%;
+        input{
+          width: 85%;
+          border: none;
+          border-radius: 8px;
+          outline: none;
+          height: 35px;
+          padding: 15px;
+          margin-right: -5px;
+        }
+        img{
+          width: 35px;
+          background-color: white;
+          padding: 5px;
+          margin-bottom: -12px;
+          margin-left: -9px;
+          border-radius: 8px;
+        }
+      }
+      .downloadApp{
+        display: flex;
+        justify-content: space-around;
+        margin: 25px 0;
+        img{
+          margin: 0 10px;
+          width: 130px;
+        }
+      }
+    }
+  }
+  hr{
+    border: 1px solid #d7d6d6;
+  }
+  .downFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p{
+      width: 32%;
+      color: #777B82;
+      font-size: 13px;
+    }
+    div{
+      display: flex;
+      align-items: center;
+      img{
+        width: 40px;
+      }
+      span{
+        font-weight: bold;
+      }
+      .number{
+        color:  #325ECD;
+        font-size: 18px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 750px) {
+  footer{
+    .upFooter{
+      display: block;
+      div{
+        width: 90%;
+      }
+    }
+    .middleFooter{
+      display: block;
+      .menu{
+        width: 100%;
+      }
+      .searchPart{
+        width: 100%;
+        .downloadApp{
+          flex-wrap: wrap;
+          img{
+            margin: 10px;
+          }
+        }
+      }
+    }
+    .downFooter{
+      display: block;
+      p{
+        width: 100%;
+      }
+      div{
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  footer{
+    .upFooter{
+      div{
+        margin: 0;
+      }
+    }
+    .middleFooter{
+      .menu{
+        display: block;
+        div{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

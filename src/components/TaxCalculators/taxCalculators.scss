@@ -1,0 +1,95 @@
+.sectionOne{
+  text-align: center;
+  form{
+    border: 1px solid #e3e2e2;
+    padding: 1.5% 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    align-items: center;
+
+    .calculator{
+      width: 47%;
+      margin: 5px;
+      label{
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+  }
+  .authorization{
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    background-color: #E8F0FD;
+    border: 1px solid #B3C3EE;
+    padding: 1% 2%;
+    p{
+      font-size: 13px;
+      line-height: 22px;
+      width: 70%;
+      text-align: start;
+      margin: auto 0;
+    }
+   div{
+     width: 30%;
+     margin: auto 0;
+     text-align: end;
+     button{
+       background-color: #325ECD;
+       border-radius: 30px;
+       border: none;
+       color: white;
+       padding: 10px 15px;
+       cursor: pointer;
+       &:hover{
+         background-color: #0909b6;
+         font-weight: bold;
+         box-shadow: 0 0 10px 1px #7070f8;
+       }
+     }
+   }
+  }
+  .nextStep{
+    display: flex;
+    justify-content: center;
+    margin: 35px 5px;
+    align-items: center;
+    flex-wrap: wrap;
+    button{
+      border: 1px solid #325ECD;
+      background: none;
+      border-radius: 30px;
+      height: 35px;
+      margin-left: 15px;
+      padding: 0 20px;
+      width: 150px;
+      color: #325ECD;
+      &:hover{
+        background-color: #325ECD;
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .sectionOne{
+    form{
+      .calculator{
+        width: 95%;
+      }
+    }
+    .authorization{
+      display: block;
+      p{
+        width: 100%;
+        padding: 5px 15px;
+        text-align: justify;
+      }
+      div{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

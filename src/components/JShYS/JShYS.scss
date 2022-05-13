@@ -1,0 +1,239 @@
+.sectionTwo{
+ text-align: center;
+ .importantInfo{
+  background-color: #E8F0FD;
+  border: 1px solid #B2C3EE;
+  border-radius: 10px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  padding: 12px 10px;
+  font-weight: bold;
+  a{
+   color: #325ECD;
+  }
+  img{
+   margin: auto;
+  }
+ }
+ form{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: end;
+ div{
+  margin: 0.2% 1%;
+  text-align: start;
+  select{
+   border-radius: 5px;
+   width: 90%;
+   padding: 8px 15px;
+   border: 1px solid #dad9d9;
+   color: #b9b8b8;
+   outline: none;
+   margin-top: 8px
+  }
+  label{
+   font-size: 14px;
+   font-weight: bold;
+   line-height: 25px;
+  }
+  .year{
+   width: 90px;
+  }
+
+ }
+
+  .widthInput input, .widthInput2 input{
+   border-radius: 5px;
+   width: 90%;
+   padding: 8px 15px;
+   border: 1px solid #dad9d9;
+   color: #b9b8b8;
+   outline: none;
+   &::placeholder{
+    color: #cecece;
+   }
+  }
+  .widthInput{
+   width: 22%;
+   min-width: 290px;
+  }
+  .widthInput2{
+   width: 30.3%;
+   min-width: 290px;
+  }
+  .fieldset{
+   width: 19.5%;
+   min-width: 280px;
+   fieldset{
+    width: 100%;
+    border: 0.5px solid #d9d9d9;
+    border-radius: 5px;
+    height: 40px;
+
+    input{
+     border: none!important;
+     width: 100%;
+     margin-top: -9px;
+     outline: none;
+     height: 25px;
+
+    }
+    legend{
+     font-size: 10px;
+     color: grey;
+    }
+    select{
+     width: 100%;
+     height: 200%;
+     padding: 0;
+     margin-top: -10px;
+     border: none;
+     margin-left: 0;
+    }
+   }
+  }
+  span{
+   height: 1px;
+   width: 92%;
+   margin: 25px 10px;
+   background-color: #e0e0e0;
+  }
+  h4{
+   width: 90%;
+   line-height: 22px;
+   text-align: center;
+  }
+  .privilege{
+   width: 45%;
+   display: flex;
+   input{
+    margin-right: 10px ;
+   }
+   label{
+    font-weight: normal;
+   }
+
+  }
+ }
+ .calculateTax{
+  display: flex;
+  justify-content: center;
+  margin: 35px 5px;
+  align-items: center;
+  flex-wrap: wrap;
+  h3{
+   margin: 0 10px;
+  }
+  button{
+   border: 1px solid #325ECD;
+   font-weight: bold;
+   background: none;
+   border-radius: 30px;
+   height: 35px;
+   padding: 0 20px;
+   width: 150px;
+   color: #325ECD;
+   &:hover{
+    background-color: #325ECD;
+    color: white;
+   }
+  }
+ }
+ .Errors{
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+ }
+ .resultList{
+  a{
+   color: #325ECD
+  }
+  .result{
+   text-align: justify;
+   background-color: #E8F0FD;
+   padding: 20px 8%;
+   margin: 15px auto;
+   border-radius: 10px;
+   border: 1px solid #B2C3EE;
+   h1{
+    text-align: center;
+   }
+   p{
+    font-size: 14px;
+   }
+   div{
+    display: flex;
+    p{
+     width: 47%;
+     padding: 1% 1%;
+     text-align: start;
+     font-size: 14px;
+     font-family: sans-serif;
+    }
+   }
+  }
+  .download{
+   margin: 30px 0;
+   align-items: center;
+   justify-content: center;
+   span{
+    font-size: 12px;
+    margin: 5px;
+   }
+   select{
+    width: 150px;
+    border: 1px solid #d7d5d5 !important;
+    outline: none;
+    height: 30px;
+    color: #525151;
+    margin: 5px;
+    cursor: pointer
+   }
+   button{
+    border: 1px solid #cecccc;
+    background: none;
+    border-radius: 10px;
+    padding: 7px 12px;
+    color: #325ECD;
+    margin: 5px;
+    font-weight: bold;
+     cursor: pointer
+   }
+  }
+ }
+}
+@media (max-width: 700px) {
+ .sectionTwo{
+  form{
+   .fieldset, .widthInput, .widthInput2{
+    width: 290px;
+    margin: 5px 0;
+   }
+   .privilege{
+    width: 95%;
+    margin: 5px auto;
+   }
+  }
+  .resultList{
+   .result{
+    padding: 10px;
+    div{
+     display: block;
+     p{
+      width: 95%;
+      text-align: justify;
+     }
+    }
+   }
+  }
+  .calculateTax{
+   display: block;
+   button{
+    margin: 10px 0;
+   }
+  }
+ }
+}
